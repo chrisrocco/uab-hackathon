@@ -1,0 +1,25 @@
+{
+  "name": "uab-hacks",
+  "version": "1.0.0",
+  "description": "Promotional website for UAB Hacks event",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "UAB",
+    "tech",
+    "challenge",
+    "hackathon",
+    "birmingham",
+    "MLH"
+  ],
+  "author": "Chris Rocco",
+  "license": "ISC"
+}
