@@ -14,3 +14,5 @@ services:
   uabhacks_api:
     build: ./api
     env_file: .env
+    environment:
+      - "PORT=8001"
