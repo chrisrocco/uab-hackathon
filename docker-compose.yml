@@ -1,0 +1,16 @@
+version: '2'
+services:
+  uabhacks_proxy:
+    build: ./nginx
+    links:
+      - uabhacks_client
+      - uabhacks_api
+    ports:
+      - 80:80
+  uabhacks_client:
+    build: ./client
+    depends_on:
+      - uabhacks_api
+  uabhacks_api:
+    build: ./api
+    env_file: .env
