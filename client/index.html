@@ -8,7 +8,9 @@
         <meta name="keywords" content="material design, card style, material template, portfolio, corporate, business, creative, agency">
         <meta name="author" content="trendytheme.net">
 
-        <title>Coming Soon</title>
+        <title>UAB Tech Challenge</title>
+
+        <script src="config.js"></script>
 
         <!--  favicon -->
         <link rel="shortcut icon" href="assets/img/ico/favicon.png">
@@ -33,6 +35,9 @@
         <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Style CSS -->
         <link href="style.css" rel="stylesheet">
+        <!-- Sweet Alerts -->
+        <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+        <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,7 +56,7 @@
               	<div class="comingsoon-wrapper text-center">
 	                <div class="logo">
 	                    <a href="#">
-	                    	<img src="assets/img/icon-logo.png" alt="">
+	                    	<img src="assets/img/uab.png" alt="UAB Hackathon" style="height: 80px">
 	                    </a>
 	                </div>
 	                
@@ -84,11 +89,11 @@
 		             <div class="row">
 		                <div class="col-md-6 col-md-offset-3">
 		                  <div class="subscribe-wrapper text-center">
-                          <form class="subscribe-form mailchimp" method="post">
+                          <form id="mailingListForm">
 
                               <div class="input-field">
-                                <label class="sr-only" for="email">Email</label>
-                                <input id="subscribeEmail" type="email" name="subscribeEmail" class="validate" >
+                                <label class="sr-only" for="subscribeEmail">Email</label>
+                                <input id="subscribeEmail" type="email" name="email" class="validate" required>
 
                                 <!-- to showing error message -->
                                 <label for="subscribeEmail" data-error="wrong" data-success="right">Type your email</label>
@@ -179,6 +184,9 @@
         <script src="assets/js/ajaxchimp.js"></script>
         <script src="assets/js/ajaxchimp-config.js"></script>
         <script src="assets/js/scripts.js"></script>
+
+        <!-- Main Script -->
+        <script src="index.js"></script>
 
     </body>
   
