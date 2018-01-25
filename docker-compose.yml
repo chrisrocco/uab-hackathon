@@ -15,4 +15,4 @@ services:
     build: ./api
     env_file: .env
     environment:
-      - "PORT=8001"
+      - "PORT=80"
